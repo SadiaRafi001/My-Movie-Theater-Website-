@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎬 Sadia's Movie Theater 🍿</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="theater">
+    <h1>🎬 Welcome to Sadia's Cinema 🍿</h1>
+
+    <marquee behavior="scroll" direction="left" scrollamount="10" class="marquee">
+      🎬 Now Showing: My Favorite Comedy Film Trailer 🎥  Enjoy the Video!  🍿
+    </marquee>
+
+    <div class="screen">
+      <div class="lights">
+        <video src="./media/Total Dhamaal _ Official Trailer _ Ajay _ Anil _ Madhuri _ Indra Kumar _ Feb. 22nd.mp4" controls autoplay></video>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="document.querySelector('video').currentTime = 0">🔁 Play Again</button>
+      <button onclick="alert('Thank you for rating! 🌟🌟🌟🌟🌟')">⭐ Rate Video</button>
+    </div>
+    <section class="rating">
+        <h2>Rate this Trailer: 🎬</h2>
+        <div class="stars">
+          <span class="star" onclick="rateMovie(1)">⭐</span>
+          <span class="star" onclick="rateMovie(2)">⭐</span>
+          <span class="star" onclick="rateMovie(3)">⭐</span>
+          <span class="star" onclick="rateMovie(4)">⭐</span>
+          <span class="star" onclick="rateMovie(5)">⭐</span>
+        </div>
+        <p id="ratingMessage"></p>
+      </section>
+  </section>
+</body>
+</html>

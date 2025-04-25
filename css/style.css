@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+  }
+  
+  .theater {
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+    margin-bottom: 20px;
+  }
+  
+  .marquee {
+    color: #ffcc00;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffcc00;
+    font-weight: bold;
+  }
+  
+  .screen {
+    border: 10px solid #ff0000;
+    box-shadow: 0 0 30px #ff0000;
+    width: 800px;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    background-color: #111;
+  }
+  
+  video {
+    width: 750px;   /* Increase width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ffcc00;
+  }
+  
+  button:hover {
+    background-color: #ffaa00;
+  }
+  
+  /* Blinking lights around the video */
+  .lights {
+    padding: 10px;
+    border: 8px dotted #ff0000;
+    animation: blinkLights 1s infinite alternate;
+    border-radius: 12px;
+  }
+  
+  @keyframes blinkLights {
+    0% {
+      border-color: #ff0000;
+      box-shadow: 0 0 20px #ff0000;
+    }
+    100% {
+      border-color: #ffff00;
+      box-shadow: 0 0 20px #ffff00;
+    }
+  }
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2em;
+  }
+  
+  .star {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .star:hover {
+    transform: scale(1.3);
+  }
+  
+  .rating h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+  }
+  
